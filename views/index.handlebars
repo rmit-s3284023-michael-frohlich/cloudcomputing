@@ -2,7 +2,7 @@
   <div class="nav-wrapper container">
     <ul>
       <li><a href="http://ec2-13-56-193-105.us-west-1.compute.amazonaws.com:3000/">SEARCH</a></li>
-      <li><a href="http://ec2-13-56-193-105.us-west-1.compute.amazonaws.com:3000/searchdb">COMPARE</a></li>
+      <li><a href="http://ec2-13-56-193-105.us-west-1.compute.amazonaws.com:3000/compare">COMPARE</a></li>
     </ul>
   </div>
 </nav>
@@ -11,6 +11,8 @@
   <div class="row">
     <br>
     <h5 class="white-text center">League Summoner Finder</h5>
+  </div>
+  <div class="row">
     <form id="searchForm" class="col s12" action="/search" method="get">
       <div class="input-field col s12 m6 l4 offset-l4 offset-m3">
         <input type="text" id="summoner" name="summoner" class="validate">
@@ -18,6 +20,8 @@
       </div>
       <br>
     </form>
+  </div>
+  <div class="row">
     <br>
     <button class="btn waves-effect waves-light col s6 m2 l2 offset-l4 offset-m4 teal darken-2" form="searchForm" type="submit">ONLINE</button>
     <button class="btn waves-effect waves-light col s6 m2 l2 teal darken-2" form="searchForm" formaction="/searchdb" type="submit">DATABASE</button>

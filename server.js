@@ -20,7 +20,6 @@ app.get('/', function(req, res) {
   res.render('index');
 });
 
-
 app.get('/searchdb', function(req, res) {
   MongoClient.connect(mongoURL, function(err, db) {
     if (err) throw err;
