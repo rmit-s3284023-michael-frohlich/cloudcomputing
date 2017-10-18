@@ -26,7 +26,7 @@ app.get('/searchdb', function(req, res) {
     if (err) throw err;
     db.collection("summoners").findOne({ name: req.query.summoner}, function(err, result) {
       if (err) throw err;
-      res.render('compare', {
+      res.render('index', {
         info: result
       });
       console.log(result);
@@ -192,7 +192,7 @@ app.get('/search', function(req, res) {
 
 app.get('/compare', function(req, res) {
   var data = {};
-  var apiKey = 'RGAPI-2b166da2-7988-4b0f-9c07-0e7e78b5634c';
+  var apiKey = 'RGAPI-21a4b29e-2123-40f3-963a-a9ec69471502';
   var search = req.query.summoner1.toLowerCase();
   var search2 = req.query.summoner2.toLowerCase();
 
