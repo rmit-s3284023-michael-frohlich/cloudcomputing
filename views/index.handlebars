@@ -29,10 +29,12 @@
     <button class="btn waves-effect waves-light col s6 m2 l2 teal darken-2" form="searchForm" formaction="/searchdb" type="submit">DATABASE</button>
     <br>
   </div>
-
+  <br>
   {{#if info}}
     <div class="row">
-      <h4 class="white-text center">{{info.name}}{{info.error}}</h4>
+      <div class="col s12 center">
+        <h4 class="white-text center">{{info.name}}{{info.error}}</h4>
+      </div>
     </div>
     <br>
     <div class="row">
