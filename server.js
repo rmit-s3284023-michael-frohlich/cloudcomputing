@@ -192,7 +192,7 @@ app.get('/search', function(req, res) {
 app.get('/compare', function(req, res) {
   var data = {};
   var apiKey = 'RGAPI-21a4b29e-2123-40f3-963a-a9ec69471502';
-  var search = req.query.summoner.toLowerCase();
+  var search = req.query.summoner1.toLowerCase();
   var search2 = req.query.summoner2.toLowerCase();
 
   async.waterfall([
