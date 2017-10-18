@@ -26,7 +26,7 @@ app.get('/searchdb', function(req, res) {
     if (err) throw err;
     db.collection("summoners").findOne({ name: req.query.summoner}, function(err, result) {
       if (err) throw err;
-      res.render('index', {
+      res.render('compare', {
         info: result
       });
       console.log(result);
