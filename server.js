@@ -6,7 +6,7 @@ var async = require('async');
 const path = require('path');
 var MongoClient = require('mongodb').MongoClient
 
-var mongoURL = "mongodb://localhost:27017/leaguedb";
+var mongoURL = "mongodb://ec2-54-193-110-38.us-west-1.compute.amazonaws.com:27017/leaguedb";
 
 app.engine('handlebars', exphbs({
   defaultLayout: 'main'
@@ -37,7 +37,7 @@ app.get('/searchdb', function(req, res) {
 
 app.get('/search', function(req, res) {
   var data = {};
-  var apiKey = 'RGAPI-2b166da2-7988-4b0f-9c07-0e7e78b5634c';
+  var apiKey = 'RGAPI-21a4b29e-2123-40f3-963a-a9ec69471502';
   var search = req.query.summoner.toLowerCase();
 
   async.waterfall([
