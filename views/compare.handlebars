@@ -1,22 +1,26 @@
+<nav class="nav-center teal darken-3" role="navigation">
+    <div class="nav-wrapper container">
+        <ul>
+          <li><a href="http://ec2-13-56-193-105.us-west-1.compute.amazonaws.com:3000/">SEARCH</a></li>
+          <li><a href="http://ec2-13-56-193-105.us-west-1.compute.amazonaws.com:3000/searchdb">COMPARE</a></li>
+        </ul>
+    </div>
+</nav>
+
 <div class="container">
   <div class="row">
     <br>
     <h5 class="white-text center">League Summoner Finder</h5>
-    <form id="compareForm" class="col s12" action="/compare" method="get">
-      <div class="row">
-        <div class="input-field col s12 m6 l3 offset-l3">
-          <input type="text" id="summoner1" name="summoner1" class="validate">
-          <label for="summoner">Summoner 1</label>
+    <form id="searchForm" class="col s12" action="/search" method="get">
+        <div class="input-field col s12 m6 l4 offset-l4 offset-m3">
+          <input type="text" id="summoner" name="summoner" class="validate">
+          <label for="summoner">Summoner Name</label>
         </div>
-        <div class="input-field col s12 m6 l3">
-          <input type="text" id="summoner2" name="summoner2" class="validate">
-          <label for="summoner">Summoner 2</label>
-        </div>
-      </div>
-      <div class="row">
-        <button class="btn waves-effect waves-light col s4 l2 offset-l5 offset-s4" form="compareForm" type="submit">Compare</button>
-      </div>
+        <br>
     </form>
+    <br>
+    <button class="btn waves-effect waves-light col s6 m2 l2 offset-l4 offset-m4 teal darken-2" form="searchForm" type="submit">ONLINE</button>
+    <button class="btn waves-effect waves-light col s6 m2 l2 teal darken-2" form="searchForm" formaction="/searchdb" type="submit">DATABASE</button>
     <br>
 
     {{#if info}}
