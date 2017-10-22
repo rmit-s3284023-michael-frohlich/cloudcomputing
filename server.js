@@ -36,7 +36,7 @@ app.get('/searchdb', function(req, res) {
 
 app.get('/search', function(req, res) {
   var data = {};
-  var apiKey = 'RGAPI-21a4b29e-2123-40f3-963a-a9ec69471502';
+  var apiKey = 'RGAPI-a07b4d71-22b9-43d5-9e45-53cc80dbeec6';
   var search = req.query.summoner.toLowerCase();
 
   async.waterfall([
@@ -191,7 +191,7 @@ app.get('/search', function(req, res) {
 
 app.get('/compare', function(req, res) {
   var data = {};
-  var apiKey = 'RGAPI-21a4b29e-2123-40f3-963a-a9ec69471502';
+  var apiKey = 'RGAPI-a07b4d71-22b9-43d5-9e45-53cc80dbeec6';
   var search = req.query.summoner1.toLowerCase();
   var search2 = req.query.summoner2.toLowerCase();
 
