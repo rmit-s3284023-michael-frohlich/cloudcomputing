@@ -6,7 +6,7 @@ var async = require('async');
 const path = require('path');
 var MongoClient = require('mongodb').MongoClient
 
-var mongoURL = "mongodb://ec2-54-193-110-38.us-west-1.compute.amazonaws.com:27017/leaguedb";
+var mongoURL = "mongodb://ec2-13-56-255-76.us-west-1.compute.amazonaws.com:27017/leaguedb";
 
 app.engine('handlebars', exphbs({
   defaultLayout: 'main'
